@@ -30,7 +30,6 @@ body {
 	color: #68b3dd;
 	display: flex;
 	flex-direction: column;
-	padding-top: env(safe-area-inset-top);
 }
 
 * {
@@ -42,6 +41,10 @@ body {
 a {
 	color: inherit;
 	text-decoration: underline;
+}
+
+header {
+	padding-top: env(safe-area-inset-top);
 }
 
 nav {
