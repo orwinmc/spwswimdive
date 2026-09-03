@@ -25,7 +25,8 @@ body {
 	background-size: cover;
 	backdrop-filter: blur(12px);
 	font-family: var(--font-google-sans), Helvetica, sans-serif;
-	height: 100vh;
+	min-height: 100dvh;
+	overflow: hidden;
 	background-position: center;
 	color: #68b3dd;
 	display: flex;
