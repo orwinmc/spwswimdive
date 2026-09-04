@@ -5,15 +5,65 @@
 	flex-direction: column;
 	align-items: flex-start;
 	justify-content: space-between;
-	padding: 2rem;
+}
+
+.headings {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: flex-end;
+	gap: 1rem;
+	padding: calc(100vh / 8) 2rem 2rem 2rem;
 }
 
 .headings h1 {
-	font-size: 2.5rem;
+	font-size: 2rem;
 	font-weight: 700;
 }
 
 .headings h2 {
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 400;
+}
+
+.spw_logo {
+	width: 2.5rem;
+	height: auto;
+	position: relative;
+	left: -1rem;
+}
+
+.mobile_break {
+	display: block;
+}
+
+.girls_team_div_img {
+	width: 100%;
+	background: url("/images/girls-team.jpeg");
+	background-size: cover;
+}
+
+.boys_team_div_img {
+	width: 100%;
+	background: url("/images/boys-team.jpg");
+	background-size: cover;
+	display: none;
+}
+
+@media (min-width: 620px) {
+	.text_container {
+		order: 2;
+	}
+	.logo_container {
+		order: 1;
+	}
+	.mobile_break {
+		display: none;
+	}
+	.spw_logo {
+		left: 0;
+	}
+	.boys_team_div_img {
+		display: block;
+	}
 }

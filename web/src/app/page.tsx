@@ -1,4 +1,6 @@
 import styles from "./page.module.css";
+import Image from "next/image";
+import spw_logo from "../../public/images/spw-logo.png";
 
 export default function Home() {
 	return (
@@ -18,17 +20,20 @@ export default function Home() {
 			</header>
 			<main className={styles.main}>
 				<div className={styles.headings}>
-					<br></br>
-					<br></br>
-					<br></br>
-					<br></br>
-					<br></br>
-					<h1>Sun Prairie West HS Swim & Dive</h1>
-					<h2>Inspiring Lifelong Aquatic Athletes</h2>
+					<div className={styles.text_container}>
+						<h1>
+							Sun Prairie West HS <br className={styles.mobile_break}></br>Swim & Dive
+						</h1>
+						<h2>Inspiring Lifelong Aquatic Athletes</h2>
+					</div>
+					<div className={styles.logo_container}>
+						<Image className={styles.spw_logo} src={spw_logo} alt="Sun Prairie West Logo" />
+					</div>
 				</div>
 			</main>
 			<footer>
-				<div></div>
+				<div className={styles.girls_team_div_img}></div>
+				<div className={styles.boys_team_div_img}></div>
 			</footer>
 		</>
 	);
