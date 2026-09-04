@@ -25,8 +25,7 @@ body {
 	background-size: cover;
 	backdrop-filter: blur(12px);
 	font-family: var(--font-google-sans), Helvetica, sans-serif;
-	min-height: 100dvh;
-	overflow: hidden;
+	height: 100%;
 	background-position: center;
 	color: #68b3dd;
 	display: flex;
@@ -49,9 +48,9 @@ header {
 }
 
 nav {
-	padding: 2rem;
+	padding: 3rem 2rem 2rem 2rem;
 	width: 100%;
-	font-size: 1.25rem;
+	font-size: 1rem;
 	font-weight: 700;
 }
 
@@ -62,7 +61,37 @@ nav li {
 }
 
 footer {
-	height: 40%;
-	background: url("/images/footer-bg.jpeg");
-	background-size: cover;
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	height: calc(100vh / 2);
+	/*background: #68b3dd;*/
+	gap: 1rem;
+	/*border-width: 0.2rem 0 0 0;*/
+	/*order-style: solid;*/
+	/*border-color: #68b3dd;*/
+}
+
+@media (min-width: 1px) {
+	html {
+		font-size: 11pt;
+	}
+}
+
+@media (min-width: 450) {
+	html {
+		font-size: 12pt;
+	}
+}
+
+@media (min-width: 670) {
+	html {
+		font-size: 13pt;
+	}
+}
+
+@media (min-width: 830px) {
+	html {
+		font-size: 16pt;
+	}
 }
