@@ -13,7 +13,7 @@
 	flex-direction: row;
 	align-items: flex-end;
 	gap: 1rem;
-	padding: calc(100vh / 8) 2rem 2rem 2rem;
+	padding: calc(100vh / 8) 2rem 2rem max(2rem, calc(env(safe-area-inset-left) + 1rem));
 }
 
 .headings h1 {
@@ -41,12 +41,14 @@
 	width: 100%;
 	background: url("/images/girls-team.jpeg");
 	background-size: cover;
+	background-position: 36% 0%;
 }
 
 .boys_team_div_img {
 	width: 100%;
 	background: url("/images/boys-team.jpg");
 	background-size: cover;
+	background-position: 38% 30%;
 	display: none;
 }
 
