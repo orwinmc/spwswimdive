@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Google_Sans } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const googleSans = Google_Sans({
@@ -15,6 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: LayoutProps<"/">) {
 	return (
 		<html lang="en" className={`${googleSans.variable}`}>
+			<Analytics />
 			<head>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 				<meta name="apple-mobile-web-app-capable" content="yes" />
